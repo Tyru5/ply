@@ -19,13 +19,13 @@ public class Main {
 
 	public static void main(String[] args) throws IOException{
 		// checking command line arguments:
-		if( args.length != 1 ){
+		if( args.length != 2 ){
 			Usage("Wrong number of parameters!");
 		}else{
 			// System.out.println("The file is: " + args[0]);
 		}
 		PLYimage image = new PLYimage();
-		int res = image.readPLY(args[0]);
+		int res = image.readPLY(args[1]);
 		if(DEBUG) System.out.println("Exit code: " +  res);
 	}
 

@@ -2,11 +2,9 @@
 // CS410 :: PA1
 // AUGUST 20,2016
 
-
 /*
  * THIS CLASS IS TO READ THE PLY FILE (IMAGE)
  */
-
 
 import java.io.File;
 import java.io.IOException;
