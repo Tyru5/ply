@@ -3,8 +3,6 @@
 // AUGUST 20,2016
 
 import java.io.IOException;
-
-
 public class Main {
 
 	private static final boolean DEBUG = false;

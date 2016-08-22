@@ -67,7 +67,7 @@ public class PLYimage {
 		}while( removeComments(comments[0]) );
 
 		if(amountOfComments != 0)System.out.println("There were " + amountOfComments + " comment(s) in the file.");
-		// else System.out.println("There were no comments in the .ply file!");
+		else System.out.println("\nThere were no comments in the .ply file!");
 
 		// what type of element?
 		String[] element = line.split(" ", 3);
@@ -106,7 +106,7 @@ public class PLYimage {
 		z = sumZVerts(vertices);
 
 		System.out.println();
-		System.out.printf("The Mean Vertex is:\n[%f,\n%f,\n%f]", (x/445),(y/445),(z/445) );
+		System.out.printf("The Mean Vertex is:\n[%f]\n[%f]\n[%f]\n\n", (x/445),(y/445),(z/445) );
 
 		return 1;
 	}
