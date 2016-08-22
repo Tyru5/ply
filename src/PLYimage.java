@@ -97,22 +97,22 @@ public class PLYimage {
 		if(line.equals(ENDHEADER)){
 			// System.out.println("Reached the end of the header for the .ply file.");
 		}
-		
+
 		vertices = new double[verts];
 		for(int i = 0; i < verts; i++){
 			vertices[i] = br.nextDouble();
 		}
-		
+
 		x = sumXVerts(vertices);
 		y = sumYVerts(vertices);
 		z = sumZVerts(vertices);
-		
+
 		System.out.println();
 		System.out.printf("The Mean Vertex is:\n[%f,\n%f,\n%f]", (x/445),(y/445),(z/445) );
-		
+
 		return 1;
 	}
-	
+
 	private double sumXVerts(double[] arry){
 		int count = 0;
 		double total = 0.0;
@@ -121,16 +121,16 @@ public class PLYimage {
 		}
 		return total;
 	}
-	
+
 	private double sumYVerts(double[] arry){
 		int count = 0;
 		double total = 0.0;
 		for( int i = 1; i < arry.length; i+=3){
 			total += arry[i];
-		}		
+		}
 		return total;
 	}
-	
+
 	private double sumZVerts(double[] arry){
 		int count = 0;
 		double total = 0.0;
@@ -139,7 +139,7 @@ public class PLYimage {
 		}
 		return total;
 	}
-	
+
 	// method to deal with the comments of the ply file:
 	private boolean removeComments(String currentLine){
 		//Comments may be placed in the header by using the word comment at the start of the line. Everything from there until the end of the line should then be ignored
