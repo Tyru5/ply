@@ -23,8 +23,8 @@ public class PLYimage {
 	private String fileHeader;
 	private String fileType;
 	private int amountOfComments = 0;
-	private String[] comments = new String[10];
-	private String[] properties = new String[5];
+	private String[] comments = new String[1];
+	private String[] properties = new String[1];
 	private int amountOfProps = 0;
 	private int verts = 0;
 	private int faces = 0;
